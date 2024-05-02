@@ -1,0 +1,25 @@
+<html>
+
+<body>
+<h1>BMI Calculator</h1>
+<br>
+<br>
+<form action = "{{ url_for('calculate') }}" method="POST">
+	<table bgcolor = "white">
+			<tr>
+				<th><p align = "left">Height (metres)</p></th>
+				<th><p align = "left">Weight (kilograms)</p></th>			
+			</tr>
+			<tr>
+				<td>
+					<input name = "height">
+				</td>
+				<td>
+					<input name = "weight">
+				</td>				
+	</table>
+	<br>
+	<input type = "submit" value = "CALCULATE BMI">
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+
+	{% if bmi >= 20 and bmi <= 25 %}
+		<body style = "background-color: lightblue;">
+		<p>Yay! You are in the healthy range.</p>
+	{% else %}
+		<body style = "background-color: pink;">
+		<p>Oh dear. You are not in the healthy range.</p>
+	{% endif %}
+	
+	<p><h1>Your BMI is: {{ bmi }}</h1>
+	
+	</body>
+</html>
